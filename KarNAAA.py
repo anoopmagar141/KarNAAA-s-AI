@@ -37,4 +37,16 @@ def simple_ai(user_input, first_interaction=False):
     
     if not user_input:
         return "Please enter a valid input!"
-  
+    
+    # Predefined responses with improved flexible matching
+    responses = {
+        "who are you": "Hey there! I'm KarNAAA, your AI assistant!",
+        "who made you": "I was created by anoopmagar141!",
+        "who created you": "I was created by anoopmagar141!",
+        "who built you": "I was created by anoopmagar141!",
+        "who designed you": "I was created by anoopmagar141!",
+        "what can you do": "I can assist with basic arithmetic calculations and answer simple predefined questions!",
+        "tell me a joke": "Why don’t some couples go to the gym? Because some relationships don’t work out!",
+        "what is the meaning of life": "The meaning of life is a mix of joy, purpose, and the pursuit of knowledge!"
+    }
+    
