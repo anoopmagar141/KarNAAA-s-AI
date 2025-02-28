@@ -93,3 +93,14 @@ def simple_ai(user_input, first_interaction=False):
         return calculate(user_input)
     
     return "I'm here to solve simple arithmetic calculations and answer predefined questions. Please ask me something relevant!\n\nTry asking:\n" + "\n".join(f"- {q}" for q in suggested_questions)
+
+# Example usage
+if __name__ == "__main__":
+    first_interaction = True
+    while True:
+        user_text = input("You: ")
+        if user_text.lower() == "exit":
+            print("KarNAAA: Goodbye! Have a great day!")
+            break
+        print("KarNAAA:", simple_ai(user_text, first_interaction))
+        first_interaction = False
