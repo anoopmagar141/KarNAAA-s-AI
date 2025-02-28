@@ -50,3 +50,18 @@ def simple_ai(user_input, first_interaction=False):
         "what is the meaning of life": "The meaning of life is a mix of joy, purpose, and the pursuit of knowledge!"
     }
     
+    # Keywords mapping for better recognition
+    keyword_mapping = {
+        "joke": "tell me a joke",
+        "funny": "tell me a joke",
+        "who made you": "who created you",
+        "creator": "who created you",
+        "meaning of life": "what is the meaning of life",
+        "what is life": "what is the meaning of life",
+        "explain life": "what is the meaning of life",
+        "then what is life": "what is the meaning of life",
+        "life means": "what is the meaning of life",
+        "who is your creator": "who created you",
+        "who designed you": "who created you"
+    }
+    
