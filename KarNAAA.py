@@ -78,4 +78,13 @@ def simple_ai(user_input, first_interaction=False):
     # Greet the user on first interaction
     if first_interaction:
         return f"{get_greeting()}\n\nHow can I assist you today? Here are some things you can ask:\n" + "\n".join(f"- {q}" for q in suggested_questions)
-   
+    
+    # Check for predefined responses with keyword flexibility
+    for key in responses.keys():
+        if key in user_input:
+            return responses[key]
+    
+    for keyword, mapped_question in keyword_mapping.items():
+        if keyword in user_input:
+            return responses[mapped_question]
+    
