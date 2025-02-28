@@ -88,3 +88,8 @@ def simple_ai(user_input, first_interaction=False):
         if keyword in user_input:
             return responses[mapped_question]
     
+    # Check if the input is a valid arithmetic expression
+    if re.match(r'\d+\s*[-+*/]\s*\d+', user_input):
+        return calculate(user_input)
+    
+    return "I'm here to solve simple arithmetic calculations and answer predefined questions. Please ask me something relevant!\n\nTry asking:\n" + "\n".join(f"- {q}" for q in suggested_questions)
