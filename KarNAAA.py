@@ -75,3 +75,7 @@ def simple_ai(user_input, first_interaction=False):
         "Can you calculate 5 + 3?"
     ]
     
+    # Greet the user on first interaction
+    if first_interaction:
+        return f"{get_greeting()}\n\nHow can I assist you today? Here are some things you can ask:\n" + "\n".join(f"- {q}" for q in suggested_questions)
+   
