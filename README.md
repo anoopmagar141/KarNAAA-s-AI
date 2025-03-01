@@ -14,3 +14,7 @@ You can ask questions like:
 5. What is the meaning of life?
 
 6. Can you calculate 5 + 3?
+
+
+CONVERSATION WITH KarNAAA : 
+
